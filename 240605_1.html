@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="logo">JAEK’S<br>
+                PORTFOLIO</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a>
+                        <ul class="dropdown">
+                            <li><a href="#about-history">My History</a></li>
+                            <li><a href="#about-skills">Skills</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#portfolio">Portfolio</a>
+                        <ul class="dropdown">
+                            <li><a href="#portfolio-graphic">Graphic Design</a></li>
+                            <li><a href="#portfolio-web">Web Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact Me</a>
+                        <ul class="dropdown">
+                            <li><a href="#contact-form">Form</a></li>
+                            <li><a href="#contact-info">Info</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Main Content -->
+        <main>
+            <!-- About Me Section -->
+            <section id="about">
+                <h1>About Me</h1>
+                <p>안녕하세요 ‘디자이너 최재경’ 입니다<br>
+                    디자인 경험을 살려 팀원들과 원활한 협업으로<br>
+                     
+                    포토샵, 일러스트,  html  및  효율적인 css , 시선을 이끄는 동적인 javaScript를 추구하고,<br>
+                    다양한 라이브러리를 배우고 항상 성장하고 도전적인 <br>
+                    디자이너가 되겠습니다. </p>
+            </section>
+    
+            <!-- Portfolio Section -->
+            <section id="portfolio">
+                <h1>Portfolio</h1>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" onclick="openPopup('popup1')">
+                        <img src="./단체 미션 보고서_1장 1.png" alt="Project 1">
+                        <div class="portfolio-item-info">Project 1</div>
+                    </div>
+                    <div class="portfolio-item" onclick="openPopup('popup2')">
+                        <img src="./21_리디자인 목업1(홈-1칸) 1.png" alt="Project 2">
+                        <div class="portfolio-item-info">Project 2</div>
+                    </div>
+                    <!-- 추가 프로젝트 -->
+                </div>
+            </section>
+    
+            <!-- Contact Me Section -->
+            <section id="contact">
+                <h1>Contact Me</h1>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 본 페이지는 상업적 목적이 아닌<br>
+                개인 포트폴리오용으로 제작 되었습니다.<br>
+                2024  ⓒ Choi-Jae-Kyeong.  AII Rights Reserved. 
+            </p>
+            <div class="social-media">
+         
+            </div>
+        </footer>
+    
+        <!-- Popup Modals -->
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup1')">&times;</span>
+                <h2>Project 1</h2>
+                <p>상세 내용...</p>
+            </div>
+        </div>
+    
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup2')">&times;</span>
+                <h2>Project 2</h2>
+                <p>상세 내용...</p>
+            </div>
+        </div>
+    
+        <!-- JavaScript -->
+        <script src="scripts.js"></script>
+    </body>
+    </html>
+
+</body>
+</html>
