@@ -658,7 +658,7 @@ marquee{
 	text-align: center;
 }
  .but1{
-  padding: 5px;
+  padding: 10px;
   font-size: 20px;
   width: 130px;
   height: 90px;
@@ -668,7 +668,7 @@ marquee{
   background-color:  #F8F8F8;
   border-color: rgb(190, 190, 190);
   text-align: center;
-	display :inline-block;
+	display : inline-block;
 }
 .portfolio .portfolio-inner img:hover{
   opacity: 50%;
